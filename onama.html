@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #313131;
+    }
+    .toptekst{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-size: larger;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        margin-right: 200px;
+    }
+    .top a{
+        color: rgb(134, 129, 129);
+    }
+    .kec{
+        height: 50vh;
+        width: 60%;
+    }
+    .toplinks{
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        margin-left: 200px;
+        align-items: center;
+    }
+    .toplinks img{
+        margin-left: 10px;
+    }
+    .top img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .st{
+        margin-left: 10px;
+    }
+    .search{
+        height: 5vh;
+        width: 50%;
+        object-fit: contain;
+    }
+    .st:hover{
+        color: white;
+    }
+    .dropdown{
+        margin-left: 10px;
+    }
+    select{
+        background-color: #313131;
+        border: none;
+        font-size: 16px;
+        color:rgb(134, 129, 129) ;
+    }
+    .backgroundnaslov{
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        height: 40vh;
+        color: rgb(255, 255, 255);
+        background-image: url(SlikeDZ/graduates.jpg);
+        background-size: 800px;
+        justify-content: center;
+        font-weight: bolder;
+    }
+    .backgroundnaslov h1,p{
+        margin-left: 200px;
+    }
+    .top2{
+        height: 10vh;
+        display: flex;
+
+    }
+    .top2 img{
+        height: 70px;
+        margin-left: 200px;
+    }
+    .meni{
+        justify-content: right;
+        padding-left: 930px;
+        padding-top: 20px;
+    }
+    .meni a{
+        font-size: 22px;
+        margin-left: 5px;
+        color: gray;
+    }
+    .meni a:nth-child(5){
+        color: red;
+    }
+    .upisitekst:hover{
+        color: red;
+    }
+    .redbox{
+        background-color: #f72121;
+        border: 1px solid black;
+    }
+    .first{
+        padding-top: 20px;
+        height: 30vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 400px;
+    }
+    .first span{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .first p{
+        width: 40%;
+        font-size: 20px;
+    }
+    .first a{
+        color: red;
+        font-size: 19px;
+        padding-top: 60px;
+    }
+    .bottom{
+        margin-top: 900px;
+        width: 100%;
+        height: 35vh;
+        margin-top: 30px;
+        background-color: #313131;
+    }
+    .logo2{
+        margin-left: 200px;
+        height: 7vh;
+        border-radius: 20px;
+    }
+    .con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .contact1{
+        display: flex;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .contact{
+        display: flex;
+        margin-left: 150px;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottext{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botlink{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .botlink:hover{
+        color: #8e8d8d;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="toplinks">
+            <a href="https://www.instagram.com/vern_university/?hl=en" target="_blank"><img class="kec" src="SlikeDZ/instagram.png" alt=""></a>
+            <a href="https://hr.linkedin.com/school/vern'%E2%80%8B-university/" target="_blank"><img class="kec" src="SlikeDZ/linkedin.png" alt=""></a>
+            <a href="https://www.youtube.com/user/VERNuniversity" target="_blank"><img class="kec" src="SlikeDZ/youtube.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100064558815216" target="_blank"><img class="kec" src="SlikeDZ/facebook.png" alt=""></a>
+        </div>
+        <div class="toptekst">
+            <a class="st" href=""><img class="search" src="SlikeDZ/search.png" alt=""></a>
+            <a class="st" href="studiji.html" target="_blank">Studomatic</a> 
+            <a class="st" href="">Nastaweb</a>
+            <a class="st" href="#bottom1">Kontakti</a>
+            <div class="dropdown">
+                <label for="jezik">
+                    <select name="jezik" id="jezik">
+                        <option value="Hrvatski">Hrvatski</option>
+                        <option value="Engleski">Engleski</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="top2">
+        <a href="index.html"><img src="SlikeDZ/cropped-Logo-sm.png" alt=""></a>
+        <div class="meni">
+            <a class="upisitekst" href="">Upisi</a>
+            <a class="upisitekst" href="">Studiji</a>
+            <a class="upisitekst" href="">Studenti</a>
+            <a class="upisitekst" href="">Cjeloživotno obrazovanje</a>
+            <a class="upisitekst" href="">O nama</a>
+        </div>
+    </div>
+    <div class="backgroundnaslov">
+        <h1>Sveučilište VERN'</h1>
+    </div>
+    <div class="first">
+        <div><span class="redbox">&nbsp;</span><span>Ključni pokazatelji</span></div>
+        <p>VERN’ danas izvodi ukupno 10 studija na prijediplomskoj i 7 na diplomskoj razini, na kojima studira više od 1.800 studenata, dok VERN’ova mreža alumnija broji više od 6.000 članova.</p>
+        <a href="">Saznaj više >>></a>
+    </div>
+    <div class="first">
+        <div><span class="redbox">&nbsp;</span><span>Povijest i razvoj</span></div>
+        <p>VERN’ je akademski razvoj započeo davne 1994. godine kao prvo hrvatsko privatno poslovno visoko učilište, koje je tijekom svoje transformacije u respektabilnu akademsku instituciju u hrvatsko visoko obrazovanje unijelo poduzetnički način razmišljanja i poduzetničku poslovnu kulturu.</p>
+        <a href="">Saznaj više >>></a>
+    </div>
+    <div class="first">
+        <div><span class="redbox">&nbsp;</span><span>Projekti</span></div>
+        <p>Organizacija i implementacija različitih projekata jedna je od ključnih konkurentskih odrednica naše institucije. Projekti na kojima sudjelujemo, u suradnji s različitim dionicima iz obrazovanja i gospodarstva, pružaju nam kvalitetne i realne spoznaje o trendovima u današnjem društvu.</p>
+        <a href="">Saznaj više >>></a>
+    </div>
+
+    <div class="first">
+        <div><span class="redbox">&nbsp;</span><span>Kvaliteta</span></div>
+        <p>VERN’ je strateški opredijeljen za ostvarivanje najviših nacionalnih i međunarodnih normi i standarda kvalitete u visokom obrazovanju i poslovanju. Kultura kvalitete je zajednička vrijednost i odgovornost svih dionika ove institucije i iskazuje se našom politikom kvalitete.</p>
+        <a href="">Saznaj više >>></a>
+    </div>
+    <div class="bottom">
+        <img src="SlikeDZ/cropped-Logo-sm.png" alt="" class="logo2">
+        <div class="con">
+            <div class="contact1">
+                <h2>KONTAKT</h2>
+                <div class="bottext" id="bottom1"><a class="botlink" href="">Palmotićeva 82/1 </a><a class="botlink" href=""> 10 000 Zagreb </a><a class="botlink" href="">Hrvatska</a></div>
+            </div> 
+            <div class="contact">
+                <h2>STUDIJI</h2>
+                <div class="bottext"><a class="botlink" href="">Prijediplomski studiji </a><a class="botlink" href="">Diplomski studiji</a><a class="botlink" href=" https://vern.hr/cjelozivotno-obrazovanje/">Cjeloživotno obrazovanje</a></div>
+            </div>
+            <div class="contact">
+                <h2>O NAMA</h2>
+                <div class="bottext"><a class="botlink" href="https://vern.hr/upisi/">Upisi</a><a class="botlink" href="">Studiji</a><a class="botlink" href="https://vern.hr/studenti/">Studenti</a></div> 
+            </div>
+            <div class="contact">
+                <h2>OSTALO</h2>
+                <div class="bottext"><a class="botlink" href="https://vern.hr/zastita-osobnih-podataka/">Zaštita osobnih podataka</a><a class="botlink" href="https://vern.hr/posao-na-vernu/">Posao na VERN'u</a><a class="botlink" href="https://vern.hr/o-vernu/"> O VERN'u</a> </div>
+            </div>
+    </div>
+
+</body>
+</html>

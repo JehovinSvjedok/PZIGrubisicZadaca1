@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #313131;
+    }
+    .toptekst{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-size: larger;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        margin-right: 200px;
+    }
+    .top a{
+        color: rgb(134, 129, 129);
+    }
+    .kec{
+        height: 50vh;
+        width: 60%;
+    }
+    .toplinks{
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        margin-left: 200px;
+        align-items: center;
+    }
+    .toplinks img{
+        margin-left: 10px;
+    }
+    .top img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .st{
+        margin-left: 10px;
+    }
+    .search{
+        height: 5vh;
+        width: 50%;
+        object-fit: contain;
+    }
+    .st:hover{
+        color: white;
+    }
+    .dropdown{
+        margin-left: 10px;
+    }
+    select{
+        background-color: #313131;
+        border: none;
+        font-size: 16px;
+        color:rgb(134, 129, 129) ;
+    }
+    .backgroundnaslov{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+        color: rgb(255, 255, 255);
+        background-image: url(SlikeDZ/asfasfsa.jpg);
+        background-size: 1200px;
+        justify-content: center;
+        font-weight: bolder;
+    }
+    .backgroundnaslov h1,p{
+        margin-left: 200px;
+    }
+    .top2{
+        height: 10vh;
+        display: flex;
+
+    }
+    .top2 img{
+        height: 70px;
+        margin-left: 200px;
+    }
+    .meni{
+        justify-content: right;
+        padding-left: 730px;
+        padding-top: 20px;
+    }
+    .meni a{
+        font-size: 22px;
+        margin-left: 5px;
+        color: gray;
+    }
+    .meni a:nth-child(2){
+        color: red;
+    }
+    .upisitekst:hover{
+        color: red;
+    }
+    .divider{
+        height: 7vh;
+    }
+    .redbox{
+        background-color: #f72121;
+        border: 1px solid black;
+    }
+    
+    .preddip{
+        width: 100%;
+        height: 65vh;
+        display: flex;
+    }
+    .main{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        height: 660px;
+        width: 30%;
+        display: flex;
+        background-color: #ececec;
+        font-size: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .right{
+        height: 80%;
+        width: 70%;
+        background-color: white;
+        margin-left: 615px;
+        margin-top:-660px ;
+    }
+    .preddipa{
+        width: 100%;
+        height: 6.4vh;
+        align-items: center;
+        padding-left: 30px;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        border: #8e8d8d solid 0.2px;
+    }
+    .preddipa:hover{
+        background-color: #f72121;
+        color: white;
+    }
+    .postdipa{ 
+        width: 100%;
+        height: 7vh;
+        align-items: center;
+        padding-left: 30px;
+        display: flex;
+        font-size: xx-large;
+        color: black;
+        border: #8e8d8d solid 1px;
+    }
+    .postdipa:hover{
+        background-color: #f72121;
+        color: white;
+    }
+    .left1{
+        margin-top: 100px;
+        height: 503px;
+        width: 30%;
+        display: flex;
+        background-color: #a09d9d;
+        font-size: 40px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .right1{
+        height: 80%;
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        margin-left: 615px;
+        margin-top:-503px ;
+    }
+    .bottom{
+        margin-top: 900px;
+        width: 100%;
+        height: 35vh;
+        margin-top: 30px;
+        background-color: #313131;
+    }
+    .logo2{
+        margin-left: 200px;
+        height: 7vh;
+        border-radius: 20px;
+    }
+    .con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .contact1{
+        display: flex;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .contact{
+        display: flex;
+        margin-left: 150px;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bottext{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botlink{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .botlink:hover{
+        color: #8e8d8d;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="toplinks">
+            <a href="https://www.instagram.com/vern_university/?hl=en" target="_blank"><img class="kec" src="SlikeDZ/instagram.png" alt=""></a>
+            <a href="https://hr.linkedin.com/school/vern'%E2%80%8B-university/" target="_blank"><img class="kec" src="SlikeDZ/linkedin.png" alt=""></a>
+            <a href="https://www.youtube.com/user/VERNuniversity" target="_blank"><img class="kec" src="SlikeDZ/youtube.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100064558815216" target="_blank"><img class="kec" src="SlikeDZ/facebook.png" alt=""></a>
+        </div>
+        <div class="toptekst">
+            <a class="st" href=""><img class="search" src="SlikeDZ/search.png" alt=""></a>
+            <a class="st" href="studiji.html" target="_blank">Studomatic</a> 
+            <a class="st" href="">Nastaweb</a>
+            <a class="st" href="#bottom1">Kontakti</a>
+            <div class="dropdown">
+                <label for="jezik">
+                    <select name="jezik" id="jezik">
+                        <option value="Hrvatski">Hrvatski</option>
+                        <option value="Engleski">Engleski</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="top2">
+        <a href="index.html"><img src="SlikeDZ/cropped-Logo-sm.png" alt=""></a>
+        <div class="meni">
+            <a class="upisitekst" href="">Upisi</a>
+            <a class="upisitekst" href="">Studiji</a>
+            <a class="upisitekst" href="">Studenti</a>
+            <a class="upisitekst" href="">Cjeloživotno obrazovanje</a>
+            <a class="upisitekst" href="onama.html">O nama</a>
+        </div>
+    </div>
+    <div class="backgroundnaslov">
+        <h1>Studiji</h1>
+        <br>
+        <p>VERN' izvodi:</p>
+        <br>
+        <p>10 prijediplomskih i 7 diplomskih studija</p>
+    </div>
+    <div class="divider"></div>
+    <div class="main">
+        <div class="pridip">
+            <div class="left">
+                <div><span class="redbox">&nbsp;</span></span> Prijediplomski studiji</div><div>Trajanje: 3 godine / 6 semestara</div><div>ECTS bodovi: 180</div>
+            </div>
+            <div class="right">
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/ekonomija-poduzetnistva/"><span class="crvena2">&nbsp;</span>&nbsp;  Ekonomija poduzetništva</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/studij-turizma/"><span class="crvena2">&nbsp;</span>&nbsp; Studij turizma</a>
+                <a class="preddipa" target="_blank" href="https://vern.hr/studiji/preddiplomska-razina/filmsko-televizijsko-i-multimedijsko-oblikovanje/"><span class="crvena2">&nbsp;</span>&nbsp;  Filmsko, televizijsko i multimedijsko oblikovanje</a>
+                <a class="preddipa" target="_blank" href="https://vern.hr/studiji/preddiplomska-razina/transmedijska-dramaturgija/"><span class="crvena2">&nbsp;</span>&nbsp;  Transmedijska dramaturgija</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/cyber-komunikacije-i-znanost-o-mrezi/"><span class="crvena2">&nbsp;</span>&nbsp;  Cyber komunikacije</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/odnosi-s-javnoscu-i-studij-medija/"><span class="crvena2">&nbsp;</span>&nbsp;  Odnosi s javnošću i studij medija</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/studij-novinarstva/"><span class="crvena2">&nbsp;</span>&nbsp;  Studij novinarstva</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/internet-of-things-iot/"><span class="crvena2">&nbsp;</span>&nbsp;  Internet stvari</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/poslovna-informatika/"><span class="crvena2">&nbsp;</span>&nbsp;  Poslovna informatika (POINT)</a>
+                <a class="preddipa" target="_blank" href="https://studiraj.vern.hr/studiji/tehnicki-menadzment/"><span class="crvena2">&nbsp;</span>&nbsp;  Tehnički menadžment</a>
+            </div>
+        </div>
+        <div class="postdip">
+            <div class="left1">
+                <div><span class="redbox">&nbsp;</span></span> Diplomski studiji</div><div>Trajanje: 2 godine / 4 semestara</div><div>ECTS bodovi: 120</div>
+            </div>
+            <div class="right1">
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/it-menadzment/"><span class="crvena2">&nbsp;</span>&nbsp;  IT menadžment</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/filmska-i-televizijska-rezija-i-produkcija/"><span class="crvena2">&nbsp;</span>&nbsp;  Filmska i televizijska režija i produkcija</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/menadzment-odrzivog-razvoja-turizma/"><span class="crvena2">&nbsp;</span>&nbsp;  Menadžment održivog razvoja turizma</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/poduzetnicki-menadzment/"><span class="crvena2">&nbsp;</span>&nbsp;  Poduzetnički menadžment</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/racunovodstvo-i-financije/"><span class="crvena2">&nbsp;</span>&nbsp;  Računovodstvo i financije</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/upravljanje-ljudskim-potencijalima/"><span class="crvena2">&nbsp;</span>&nbsp;  Upravljanje ljudskim potencijalima</a>
+                <a class="postdipa" target="_blank" href="https://vern.hr/studiji/diplomska-razina/upravljanje-poslovnim-komunikacijama/"><span class="crvena2">&nbsp;</span>&nbsp;  Upravljanje poslovnim komunikacijama</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="SlikeDZ/cropped-Logo-sm.png" alt="" class="logo2">
+        <div class="con">
+            <div class="contact1">
+                <h2>KONTAKT</h2>
+                <div class="bottext" id="bottom1"><a class="botlink" href="">Palmotićeva 82/1 </a><a class="botlink" href=""> 10 000 Zagreb </a><a class="botlink" href="">Hrvatska</a></div>
+            </div> 
+            <div class="contact">
+                <h2>STUDIJI</h2>
+                <div class="bottext"><a class="botlink" href="">Prijediplomski studiji </a><a class="botlink" href="">Diplomski studiji</a><a class="botlink" href=" https://vern.hr/cjelozivotno-obrazovanje/">Cjeloživotno obrazovanje</a></div>
+            </div>
+            <div class="contact">
+                <h2>O NAMA</h2>
+                <div class="bottext"><a class="botlink" href="https://vern.hr/upisi/">Upisi</a><a class="botlink" href="">Studiji</a><a class="botlink" href="https://vern.hr/studenti/">Studenti</a></div> 
+            </div>
+            <div class="contact">
+                <h2>OSTALO</h2>
+                <div class="bottext"><a class="botlink" href="https://vern.hr/zastita-osobnih-podataka/">Zaštita osobnih podataka</a><a class="botlink" href="https://vern.hr/posao-na-vernu/">Posao na VERN'u</a><a class="botlink" href="https://vern.hr/o-vernu/"> O VERN'u</a> </div>
+            </div>
+    </div>
+</body>
+</html>

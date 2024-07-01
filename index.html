@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #313131;
+    }
+    .toptekst{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-size: larger;
+        justify-content: right;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        margin-right: 200px;
+    }
+    .top a{
+        color: rgb(134, 129, 129);
+    }
+    .kec{
+        height: 50vh;
+        width: 60%;
+    }
+    .toplinks{
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        margin-left: 200px;
+        align-items: center;
+    }
+    .toplinks img{
+        margin-left: 10px;
+    }
+    .top img{
+        width: 30px;
+        height: 30px;
+        
+    }
+    .st{
+        margin-left: 10px;
+    }
+    .st1{
+        height: 5vh;
+        width: 50%;
+        object-fit: contain;
+    }
+    .st:hover{
+        color: white;
+    }
+    .dropdown{
+        margin-left: 10px;
+    }
+    select{
+        background-color: #313131;
+        border: none;
+        font-size: 16px;
+        color:rgb(134, 129, 129) ;
+    }
+    .mcontent{
+        background-image: url(SlikeDZ/360_F_560447618_PEr4H2GCkr795pN3i6uR2bjwaph4SxlG.jpg);
+        width: 100%;
+        background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: cover;
+        height: 75vh;
+    }
+    .mcontent img{
+        width: 20%;
+        height: 50%;
+        margin-left: 50px;
+    }
+    .upisi{
+        font-size: 20px;
+        display: flex;
+        justify-content: right;
+        margin-top: -160px;
+        margin-right: 200px;
+        color: rgb(250, 250, 250);
+    }
+    .upisitekst:hover{
+        color: #8e8d8d;
+    }
+    .upisitekst{
+        margin-left: 10px;
+    }
+    .infobutton{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 25px;
+        margin-left: 200px;
+        margin-top: 250px;
+    }
+    .duja{
+        background-color: #C50707;
+        width: 20%;
+        margin-top: 5px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+    .duja:hover{
+        background-color: #890404;
+    }
+    .lcontent{
+        width: 100%;
+        height: 50vh;
+        margin-left: 200px;
+        margin-top: 50px;
+        
+    }
+    .nas1{
+        color: gray;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    h1{
+        font-weight: bolder;
+    }
+    .redbox{
+        background-color: #f72121;
+        border: 1px solid black;
+    }
+    .first{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50vh;
+    }
+    .lefttop{
+        position: relative;
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+    }
+    .slika1{
+        margin-top: 10px; 
+    }
+    .slika1 img{
+        width: 65%;
+        height: 100%;
+        transition: transform 1s;
+    }
+    .slika1:hover img{
+        transform: scale(1.15);
+    }
+    .righttop{
+        grid-area: desno1;
+        margin-right: 200px;
+        
+    }
+    .righttop img{
+        width: auto;
+        height: 400px;
+    }
+    .wrapper1 p{
+        padding-top: 10px;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    .second{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 15px;
+        height: 50vh;
+    }
+    .wrapper{
+        margin-top: 20px;
+        margin-left: -20px;
+        width: 400px;
+        position: relative;
+        
+    }
+    .wrapper img{
+        padding: 5px;
+        width: auto;
+        height: 300px;
+            
+    }
+    .wrapper h2{ 
+            text-align: center;
+        } 
+    .wrapper p{
+        text-align: center;
+    }
+    .wrapper3{
+        display: flex;
+        flex-direction: row;
+    }
+    .pridip{
+        position: relative;
+        padding-top: 10px;
+    }
+    .pridip p{
+        position: absolute;
+        bottom: 270px;
+        left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .pridip img{
+        height: 300px;
+        width: 765px;
+    }
+    .postdip{
+        position: relative;
+        padding-top: 10px;
+    }
+    .postdip img{
+        height: 300px;
+        width: 765px;
+    }
+    .postdip p{
+        position: absolute;
+        bottom: 270px;
+        left: 25px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .bottom{
+        margin-top: 900px;
+        width: 100%;
+        height: 35vh;
+        background-color: #313131;
+    }
+    .logo2{
+        margin-left: 200px;
+        height: 7vh;
+        border-radius: 20px;
+    }
+    .con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .contact1{
+        display: flex;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .contact{
+        display: flex;
+        margin-left: 150px;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tex{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .botlink{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .botlink:hover{
+        color: #8e8d8d;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="toplinks">
+            <a href="https://www.instagram.com/vern_university/?hl=en" target="_blank"><img class="kec" src="SlikeDZ/instagram.png" alt=""></a>
+            <a href="https://hr.linkedin.com/school/vern'%E2%80%8B-university/" target="_blank"><img class="kec" src="SlikeDZ/linkedin.png" alt=""></a>
+            <a href="https://www.youtube.com/user/VERNuniversity" target="_blank"><img class="kec" src="SlikeDZ/youtube.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100064558815216" target="_blank"><img class="kec" src="SlikeDZ/facebook.png" alt=""></a>
+        </div>
+        <div class="toptekst">
+            <a class="st" href=""><img class="st1" src="SlikeDZ/search.png" alt=""></a>
+            <a class="st" href="stud.html" target="_blank">Studomatic</a> 
+            <a class="st" href="">Nastaweb</a>
+            <a class="st" href="#bottom1">Kontakti</a>
+            <div class="dropdown">
+                <label for="jezik">
+                    <select name="jezik" id="jezik">
+                        <option value="Hrvatski">Hrvatski</option>
+                        <option value="Engleski">Engleski</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="mcontent">
+        <div class="mcontop">
+            <div class="log">
+                <img class="logo" class="logo1" src="SlikeDZ/oglogo.png" alt="">
+            </div>
+            <div class="upisi">
+                <a class="upisitekst" href="">Upisi</a>
+                <a class="upisitekst" href="studiji.html">Studiji</a>
+                <a class="upisitekst" href="">Studenti</a>
+                <a class="upisitekst" href="">Cjeloživotno obrazovanje</a>
+                <a class="upisitekst" href="onama.html">O nama</a>
+            </div>
+        </div>
+        <div class="infobutton">
+            <p>Aktivni upisi na studije <br> Prijediplomski studiji, početak nastave u listopadu:</p>
+            <a class="duja" href="">OTVORENI SAT 29.06. i 06.07.</a>
+            <a class="duja" href="">PRISTUPNI POSTUPAK 29.06. i 06.07.</a>
+            <a href="" class="duja">INFORMACIJE - PRIJEDIPLOMSKI</a>
+            <a class="duja" href="">UPIS PRIJELAZNIKA</a>
+        </div>
+    </div>
+    <div class="lcontent">
+        <div class="first">
+            <section class="lefttop">
+                <h1><span class="redbox">&nbsp;</span> Aktualno</h1>
+                <div class="slika1">
+                    <p class="nas1">VERN' Sport</p>
+                    <img src="SlikeDZ/vern-sport-opca-1080px-600x400.jpg" alt="">
+                    
+                </div>
+            </section>
+            <section class="righttop">
+                <h1><span class="redbox">&nbsp;</span> Događanja</h1>
+                <a href="" class="wrapper1">
+                    <p>„Zagreb Classic 2024.“ – klasične uspješnice na otvorenom</p>
+                    <img src="SlikeDZ/Zagreb_Classic_2024-1200px.jpg" alt="">
+                </a>
+            </section>
+        </div>
+        <div class="second">
+            <section class="prva">
+                <div class="wrapper">
+                    <img src="SlikeDZ/1.jpg" alt="">
+                    <h2>Akademska mobilnost</h2>
+                    <p>Prorektorica Sveučilišta VERN’ sudjelovala na Erasmus konferenciji u Reyjkaviku</p>
+                </div>
+            </section>
+            <section class="druga">
+                <div class="wrapper">
+                    <img src="SlikeDZ/2.png" alt="">
+                    <h2>Ljetni filmski festivali</h2>
+                    <p>Filmovi naših studentica u natjecateljskom programu ovogodišnjeg Star Film Festa</p>
+                </div>
+            </section>
+            <section class="treca">
+                <div class="wrapper">
+                    <img src="SlikeDZ/3.jpg" alt="">
+                    <h2>Praksa i međustudijska suradnja</h2>
+                    <p>VERN’ovi studenti PR-a održali tradicionalne simulacije konferencija za medije</p>
+                </div>
+            </section>
+            <section class="cetvrta">
+                <div class="wrapper">
+                    <img src="SlikeDZ/4.jpg" alt="">
+                    <h2>Međunarodna mobilnost</h2>
+                    <p>Pozitivni dojmovi Erasmus studentica iz Španjolske o kolegijima i sportskom programu na VERN’u</p>
+                </div>
+            </section>
+        </div>
+        <div class="third">
+            <h1><span class="redbox">&nbsp;</span> Studiji</h1>
+            <div class="wrapper3">
+                <a href="" class="pridip">
+                    <img src="SlikeDZ/college-students.jpg" alt="">
+                    <p class="tekst2">Prijediplomski studiji</p>
+                </a>
+                <a href="" class="postdip">
+                    <img src="SlikeDZ/Graduate_06.20_Blog_Image_Resize.jpg" alt="">
+                    <p class="tekst2">Postdiplomski studiji</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="SlikeDZ/cropped-Logo-sm.png" alt="" class="logo2">
+        <div class="con">
+            <div class="contact1">
+                <h2>KONTAKT</h2>
+                <div class="tex" id="bottom1"><a class="botlink" href="">Palmotićeva 82/1 </a><a class="botlink" href=""> 10 000 Zagreb </a><a class="botlink" href="">Hrvatska</a></div>
+            </div> 
+            <div class="contact">
+                <h2>STUDIJI</h2>
+                <div class="tex"><a class="botlink" href="">Prijediplomski studiji </a><a class="botlink" href="">Diplomski studiji</a><a class="botlink" href=" https://vern.hr/cjelozivotno-obrazovanje/">Cjeloživotno obrazovanje</a></div>
+            </div>
+            <div class="contact">
+                <h2>O NAMA</h2>
+                <div class="tex"><a class="botlink" href="https://vern.hr/upisi/">Upisi</a><a class="botlink" href="">Studiji</a><a class="botlink" href="https://vern.hr/studenti/">Studenti</a></div> 
+            </div>
+            <div class="contact">
+                <h2>OSTALO</h2>
+                <div class="tex"><a class="botlink" href="https://vern.hr/zastita-osobnih-podataka/">Zaštita osobnih podataka</a><a class="botlink" href="https://vern.hr/posao-na-vernu/">Posao na VERN'u</a><a class="botlink" href="https://vern.hr/o-vernu/"> O VERN'u</a> </div>
+            </div>
+    </div>
+    
+</body>
+</html>
